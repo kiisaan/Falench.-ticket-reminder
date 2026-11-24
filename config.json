@@ -1,0 +1,29 @@
+{
+  "keyword": "Falench",
+  "group_name": "Falench.",
+
+  "remind_offsets_minutes": [60, 30, 5],
+  "morning_time": "06:45",
+  "morning_include_until_hour_next_day": 7,
+  "morning_send_when_empty": false,
+
+  "remind_sale_types": ["first_come", "unknown"],
+
+  "line_offsets_minutes": [30, 5],
+  "line_protected_offsets_minutes": [5],
+  "line_morning": true,
+  "line_reserve_extra_sends": 3,
+  "line_group_size": 5,
+  "discord_mention": "",
+
+  "cronjob_offsets_minutes": [5],
+  "cronjob_verify_delay_seconds": 40,
+
+  "collect_every_minutes": 180,
+  "lookahead_minutes": 90,
+  "max_run_minutes": 330,
+
+  "ticketdive_list_urls": ["https://ticketdive.com/search?q=Falench"],
+  "livepocket_list_urls": ["https://livepocket.jp/event/search?search_word=Falench"],
+  "organizers_file": "organizers.json"
+}
