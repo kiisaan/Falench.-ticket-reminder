@@ -32,10 +32,12 @@ TIME_PART = r'(\d{1,2})\s*(?:[:：]\s*(\d{2})|時\s*(?:(\d{2})\s*分)?)'
 DT_RE = re.compile(rf'{DATE_PART}{WEEKDAY}\s*(?:{TIME_PART})?')
 
 SALES_LABELS = [
+    "先着販売受付期間", "抽選販売受付期間", "一般販売受付期間", "販売受付期間", "申込受付期間",
     "チケット販売期間", "販売期間", "受付期間", "申込期間", "申し込み期間", "抽選受付期間",
     "先着受付期間", "発売期間", "販売日程", "受付日程", "販売開始日時", "販売開始",
     "受付開始日時", "受付開始", "発売開始", "一般発売", "発売日",
 ]
+GENERIC_SALES_LABEL = re.compile(r'^[^\d\s]{0,10}(?:販売|受付|申込|申し込み|発売)[^\d\s]{0,6}(?:期間|開始日時|開始)')
 DATE_LABELS = ["開催日時", "公演日時", "開催日", "公演日", "日時", "日程", "開催期間"]
 CONT_RE = re.compile(r'^(?:[\(（]|\d{1,2}\s*[:：]\s*\d{2}|20\d{2}\s*[/.\-年]|[～〜~–—])')
 
@@ -122,8 +124,14 @@ def clean_lines(text):
 
 def _labeled_values(lines, labels):
     """「ラベル 値」「ラベル\\n値」の形から、日付を含む値を取り出す"""
+    generic = labels is SALES_LABELS
     for i, line in enumerate(lines):
-        for label in labels:
+        cands_labels = list(labels)
+        if generic:
+            m = GENERIC_SALES_LABEL.match(line)
+            if m and m.group(0) not in cands_labels:
+                cands_labels.insert(0, m.group(0))
+        for label in cands_labels:
             if not line.startswith(label):
                 continue
             rest = line[len(label):].lstrip(" :：")
