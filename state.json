@@ -4,37 +4,69 @@
   "https://livepocket.jp/e/agefes1129": {
    "event_date": "2026年11月29日(日)〜2026年11月29日(日)",
    "event_day": "2026-11-29",
-   "sales": [],
+   "sales": [
+    {
+     "has_time": true,
+     "name": "先着販売受付",
+     "start": "2026-11-15T23:15:00+09:00",
+     "text": "2026年11月15日(日) 23:15〜2026年11月29日(日) 12:00",
+     "type": "first_come"
+    }
+   ],
    "source": "LivePocket",
    "title": "AGE FES",
-   "updated": "2026-11-24T17:27:31+09:00",
+   "updated": "2026-11-24T18:04:57+09:00",
    "url": "https://livepocket.jp/e/agefes1129"
   },
   "https://livepocket.jp/e/megu_hapiba2026": {
    "event_date": "2026年12月26日(土)〜2026年12月26日(土)",
    "event_day": "2026-12-26",
-   "sales": [],
+   "sales": [
+    {
+     "has_time": true,
+     "name": "先着販売受付",
+     "start": "2026-11-29T23:00:00+09:00",
+     "text": "2026年11月29日(日) 23:00〜2026年12月26日(土) 18:00",
+     "type": "first_come"
+    }
+   ],
    "source": "LivePocket",
    "title": "桃瀬めぐ生誕祭2026",
-   "updated": "2026-11-24T17:27:31+09:00",
+   "updated": "2026-11-24T18:04:57+09:00",
    "url": "https://livepocket.jp/e/megu_hapiba2026"
   },
   "https://livepocket.jp/e/ring-1205": {
    "event_date": "2026年12月5日(土)〜2026年12月5日(土)",
    "event_day": "2026-12-05",
-   "sales": [],
+   "sales": [
+    {
+     "has_time": true,
+     "name": "先着販売受付",
+     "start": "2026-11-16T21:00:00+09:00",
+     "text": "2026年11月16日(月) 21:00〜2026年12月5日(土) 11:00",
+     "type": "first_come"
+    }
+   ],
    "source": "LivePocket",
    "title": "Falench.単独公演『白くなった街と今年も待つ君へ』",
-   "updated": "2026-11-24T17:27:31+09:00",
+   "updated": "2026-11-24T18:04:57+09:00",
    "url": "https://livepocket.jp/e/ring-1205"
   },
   "https://livepocket.jp/e/shibuya-1230": {
    "event_date": "2026年12月30日(水)〜2026年12月30日(水)",
    "event_day": "2026-12-30",
-   "sales": [],
+   "sales": [
+    {
+     "has_time": true,
+     "name": "先着販売受付",
+     "start": "2026-11-24T22:00:00+09:00",
+     "text": "2026年11月24日(火) 22:00〜2026年12月30日(水) 14:00",
+     "type": "first_come"
+    }
+   ],
    "source": "LivePocket",
    "title": "Falench.単独公演『2026忘年会』",
-   "updated": "2026-11-24T17:27:31+09:00",
+   "updated": "2026-11-24T18:04:57+09:00",
    "url": "https://livepocket.jp/e/shibuya-1230"
   },
   "https://ticketdive.com/event/261206_BBH": {
@@ -51,7 +83,7 @@
    ],
    "source": "TicketDive",
    "title": "バズバズリサイタル HOT!!",
-   "updated": "2026-11-24T17:27:31+09:00",
+   "updated": "2026-11-24T18:04:57+09:00",
    "url": "https://ticketdive.com/event/261206_BBH"
   },
   "https://ticketdive.com/event/SPARK2026_winter": {
@@ -117,7 +149,7 @@
    ],
    "source": "TicketDive",
    "title": "SPARK 2026 -秋葉原冬祭-",
-   "updated": "2026-11-24T17:27:31+09:00",
+   "updated": "2026-11-24T18:04:57+09:00",
    "url": "https://ticketdive.com/event/SPARK2026_winter"
   },
   "https://ticketdive.com/event/VS_1128": {
@@ -134,7 +166,7 @@
    ],
    "source": "TicketDive",
    "title": "11/28(土) VERSUS",
-   "updated": "2026-11-24T17:27:31+09:00",
+   "updated": "2026-11-24T18:04:57+09:00",
    "url": "https://ticketdive.com/event/VS_1128"
   },
   "https://ticketdive.com/event/iDLAND13": {
@@ -151,7 +183,7 @@
    ],
    "source": "TicketDive",
    "title": "あいらんど Chapter13",
-   "updated": "2026-11-24T17:27:31+09:00",
+   "updated": "2026-11-24T18:04:57+09:00",
    "url": "https://ticketdive.com/event/iDLAND13"
   },
   "https://ticketdive.com/event/idolcapsule_mini_vol3": {
@@ -168,7 +200,7 @@
    ],
    "source": "TicketDive",
    "title": "IDOL CAPSULE mini vol.3",
-   "updated": "2026-11-24T17:27:31+09:00",
+   "updated": "2026-11-24T18:04:57+09:00",
    "url": "https://ticketdive.com/event/idolcapsule_mini_vol3"
   },
   "https://ticketdive.com/event/lnanfesta1205": {
@@ -192,7 +224,7 @@
    ],
    "source": "TicketDive",
    "title": "『Lなんフェスタ-BLAZE GOTANDA SP-』",
-   "updated": "2026-11-24T17:27:31+09:00",
+   "updated": "2026-11-24T18:04:57+09:00",
    "url": "https://ticketdive.com/event/lnanfesta1205"
   },
   "https://ticketdive.com/event/viblueEBISU1128": {
@@ -209,11 +241,11 @@
    ],
    "source": "TicketDive",
    "title": "ライブジム 第81弾",
-   "updated": "2026-11-24T17:27:31+09:00",
+   "updated": "2026-11-24T18:04:57+09:00",
    "url": "https://ticketdive.com/event/viblueEBISU1128"
   }
  },
- "last_collect": "2026-11-24T17:27:31+09:00",
+ "last_collect": "2026-11-24T18:04:57+09:00",
  "lp_excluded": {
   "https://livepocket.jp/e/0_7ql": "2027-05-31",
   "https://livepocket.jp/e/0feub": "2027-03-21",
