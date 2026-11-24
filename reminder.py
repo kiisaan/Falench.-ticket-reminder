@@ -10,6 +10,7 @@ GitHub Actions から1時間ごとに起動される想定。
 """
 import argparse
 import json
+import re
 import os
 import subprocess
 import sys
@@ -243,15 +244,23 @@ def fmt_hm(dt):
 TYPE_LABEL = {"first_come": "【先着】", "lottery": "【抽選】", "unknown": ""}
 
 
-def sale_block(ev, s, start=None, show_day=False):
+def fmt_event_date(text):
+    """「2026年12月30日(水)〜2026年12月30日(水)」のように同じ日が並ぶときは1つにする"""
+    parts = [p.strip() for p in re.split(r'[〜～~]', text or "") if p.strip()]
+    if len(parts) == 1 or (len(parts) == 2 and parts[0] == parts[1]):
+        return parts[0]
+    return (text or "").strip()
+
+
+def sale_block(ev, s, start=None, show_day=False, show_name=True):
     lines = [f"📌 {ev['title']}"]
-    if s.get("name"):
+    if show_name and s.get("name"):
         lines.append(f"🎫 {s['name']}")
     if start is not None and show_day:
         lines.append(f"🕒 発売: {fmt_day(start)} {fmt_hm(start)}")
     if ev.get("event_date"):
-        lines.append(f"📅 公演: {ev['event_date']}")
-    lines.append(f"🛒 {ev.get('source', '')}  {ev['url']}")
+        lines.append(f"📅 公演: {fmt_event_date(ev['event_date'])}")
+    lines.append(ev["url"])
     return "\n".join(lines)
 
 
@@ -315,11 +324,15 @@ def build_reminder(items, ref=None):
     else:
         head = "⏰【まもなく】チケット発売"
     parts = [head]
+    seen = set()  # 同じイベント・同じ時刻の券種違いは1つにまとめる
     for o, start, ev, s in sorted(items, key=lambda x: x[1]):
+        if (ev["url"], start) in seen:
+            continue
+        seen.add((ev["url"], start))
         left = max(1, round((start - t).total_seconds() / 60))
         day = "" if start.date() == t.date() else f"{fmt_day(start)} "
-        parts.append(f"🕒 {day}{fmt_hm(start)} {TYPE_LABEL.get(s.get('type'), '')}発売（あと約{left}分）\n"
-                     f"{sale_block(ev, s)}")
+        parts.append(f"🕒 {day}{fmt_hm(start)} 発売（あと約{left}分）\n"
+                     f"{sale_block(ev, s, show_name=False)}")
     return "\n\n".join(parts)
 
 
@@ -600,6 +613,12 @@ def _cron_channels(off, cfg):
     return ch
 
 
+def _payload_hash(g, cfg):
+    import hashlib
+    url, headers, payload = _cron_request(g["ch"], g["items"], g["fire"], cfg)
+    return hashlib.sha1(json.dumps(payload, ensure_ascii=False, sort_keys=True).encode()).hexdigest()[:12]
+
+
 def sync_cronjobs(st, cfg):
     """
     先着販売の 5分前（cronjob_offsets_minutes）通知を、LINE・Discord それぞれ cron-job.org に予約しておく。
@@ -630,7 +649,9 @@ def sync_cronjobs(st, cfg):
         fire = datetime.fromisoformat(job["fire_at"])
         finished = fire < t - timedelta(minutes=15)
         want = desired.get(gkey)
-        stale = fire > t + timedelta(minutes=3) and (want is None or sorted(want["keys"]) != sorted(job["keys"]))
+        stale = fire > t + timedelta(minutes=3) and (
+            want is None or sorted(want["keys"]) != sorted(job["keys"])
+            or job.get("hash") != _payload_hash(want, cfg))
         if not (finished or stale):
             continue
         if finished:
@@ -674,7 +695,8 @@ def sync_cronjobs(st, cfg):
                 print(f"[CRON] (dry-run) 予約: {ch} {fire:%m/%d %H:%M} {title}")
                 continue
             job_id = _cron_req("PUT", "/jobs", body)["jobId"]
-            jobs[gkey] = {"id": job_id, "fire_at": fire.isoformat(), "keys": g["keys"]}
+            jobs[gkey] = {"id": job_id, "fire_at": fire.isoformat(), "keys": g["keys"],
+                          "hash": _payload_hash(g, cfg)}
             print(f"[CRON] 予約しました: {ch} {fire:%m/%d %H:%M} {title} (job {job_id})")
             created += 1
             changed = True
