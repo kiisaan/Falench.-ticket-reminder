@@ -1,5 +1,22 @@
 {
- "cron_jobs": {},
+ "cron_jobs": {
+  "2026-11-27T19:55:00+09:00|5|discord": {
+   "fire_at": "2026-11-27T19:55:00+09:00",
+   "hash": "fe48696ba2da",
+   "id": 8951112,
+   "keys": [
+    "https://ticketdive.com/event/l0f3kPvVq12Yfq|2026-11-27T20:00:00+09:00|前売|5"
+   ]
+  },
+  "2026-11-27T19:55:00+09:00|5|line": {
+   "fire_at": "2026-11-27T19:55:00+09:00",
+   "hash": "19cab485c4a2",
+   "id": 8951113,
+   "keys": [
+    "https://ticketdive.com/event/l0f3kPvVq12Yfq|2026-11-27T20:00:00+09:00|前売|5"
+   ]
+  }
+ },
  "events": {
   "https://livepocket.jp/e/agefes1129": {
    "event_date": "2026年11月29日(日)〜2026年11月29日(日)",
