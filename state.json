@@ -1,5 +1,22 @@
 {
- "cron_jobs": {},
+ "cron_jobs": {
+  "2026-11-29T22:55:00+09:00|5|discord": {
+   "fire_at": "2026-11-29T22:55:00+09:00",
+   "hash": "90b8c23f4cf6",
+   "id": 8958343,
+   "keys": [
+    "https://livepocket.jp/e/megu_hapiba2026|2026-11-29T23:00:00+09:00|先着販売受付|5"
+   ]
+  },
+  "2026-11-29T22:55:00+09:00|5|line": {
+   "fire_at": "2026-11-29T22:55:00+09:00",
+   "hash": "49f02d6a0f22",
+   "id": 8958344,
+   "keys": [
+    "https://livepocket.jp/e/megu_hapiba2026|2026-11-29T23:00:00+09:00|先着販売受付|5"
+   ]
+  }
+ },
  "events": {
   "https://livepocket.jp/e/agefes1129": {
    "event_date": "2026年11月29日(日)〜2026年11月29日(日)",
