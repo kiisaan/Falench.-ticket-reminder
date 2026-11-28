@@ -32,7 +32,7 @@
    ],
    "source": "LivePocket",
    "title": "AGE FES",
-   "updated": "2026-11-28T20:51:55+09:00",
+   "updated": "2026-11-29T00:21:51+09:00",
    "url": "https://livepocket.jp/e/agefes1129"
   },
   "https://livepocket.jp/e/megu_hapiba2026": {
@@ -49,7 +49,7 @@
    ],
    "source": "LivePocket",
    "title": "桃瀬めぐ生誕祭2026",
-   "updated": "2026-11-28T20:51:55+09:00",
+   "updated": "2026-11-29T00:21:51+09:00",
    "url": "https://livepocket.jp/e/megu_hapiba2026"
   },
   "https://livepocket.jp/e/ring-1205": {
@@ -66,7 +66,7 @@
    ],
    "source": "LivePocket",
    "title": "Falench.単独公演『白くなった街と今年も待つ君へ』",
-   "updated": "2026-11-28T20:51:55+09:00",
+   "updated": "2026-11-29T00:21:51+09:00",
    "url": "https://livepocket.jp/e/ring-1205"
   },
   "https://livepocket.jp/e/shibuya-1230": {
@@ -83,7 +83,7 @@
    ],
    "source": "LivePocket",
    "title": "Falench.単独公演『2026忘年会』",
-   "updated": "2026-11-28T20:51:55+09:00",
+   "updated": "2026-11-29T00:21:51+09:00",
    "url": "https://livepocket.jp/e/shibuya-1230"
   },
   "https://ticketdive.com/event/261206_BBH": {
@@ -100,7 +100,7 @@
    ],
    "source": "TicketDive",
    "title": "バズバズリサイタル HOT!!",
-   "updated": "2026-11-28T20:51:55+09:00",
+   "updated": "2026-11-29T00:21:51+09:00",
    "url": "https://ticketdive.com/event/261206_BBH"
   },
   "https://ticketdive.com/event/SPARK2026_winter": {
@@ -166,7 +166,7 @@
    ],
    "source": "TicketDive",
    "title": "SPARK 2026 -秋葉原冬祭-",
-   "updated": "2026-11-28T20:51:55+09:00",
+   "updated": "2026-11-29T00:21:51+09:00",
    "url": "https://ticketdive.com/event/SPARK2026_winter"
   },
   "https://ticketdive.com/event/VS_1128": {
@@ -200,7 +200,7 @@
    ],
    "source": "TicketDive",
    "title": "IDOL CAPSULE mini vol.3",
-   "updated": "2026-11-28T20:51:55+09:00",
+   "updated": "2026-11-29T00:21:51+09:00",
    "url": "https://ticketdive.com/event/idolcapsule_mini_vol3"
   },
   "https://ticketdive.com/event/l0f3kPvVq12Yfq": {
@@ -217,7 +217,7 @@
    ],
    "source": "TicketDive",
    "title": "ライブジム 第82弾",
-   "updated": "2026-11-28T20:51:55+09:00",
+   "updated": "2026-11-29T00:21:51+09:00",
    "url": "https://ticketdive.com/event/l0f3kPvVq12Yfq"
   },
   "https://ticketdive.com/event/lnanfesta1205": {
@@ -241,7 +241,7 @@
    ],
    "source": "TicketDive",
    "title": "『Lなんフェスタ-BLAZE GOTANDA SP-』",
-   "updated": "2026-11-28T20:51:55+09:00",
+   "updated": "2026-11-29T00:21:51+09:00",
    "url": "https://ticketdive.com/event/lnanfesta1205"
   },
   "https://ticketdive.com/event/viblueEBISU1128": {
@@ -262,8 +262,9 @@
    "url": "https://ticketdive.com/event/viblueEBISU1128"
   }
  },
- "last_collect": "2026-11-28T20:51:55+09:00",
+ "last_collect": "2026-11-29T00:21:51+09:00",
  "lp_excluded": {
+  "https://livepocket.jp/e/0103goo": "2027-01-03",
   "https://livepocket.jp/e/09sedai20270130": "2027-01-30",
   "https://livepocket.jp/e/0_7ql": "2027-05-31",
   "https://livepocket.jp/e/0feub": "2027-03-21",
@@ -277,6 +278,7 @@
   "https://livepocket.jp/e/20261215_clsc": "2026-12-15",
   "https://livepocket.jp/e/20270116": "2027-01-16",
   "https://livepocket.jp/e/20270116kawachi": "2027-01-16",
+  "https://livepocket.jp/e/20270423garasu": "2027-04-23",
   "https://livepocket.jp/e/21_ru": "2026-12-23",
   "https://livepocket.jp/e/23fia": "2026-12-09",
   "https://livepocket.jp/e/2vd8e": "2027-02-14",
@@ -359,6 +361,7 @@
   "https://livepocket.jp/e/jq7f1": "2026-11-29",
   "https://livepocket.jp/e/kana_hapiba_2026": "2026-12-20",
   "https://livepocket.jp/e/kawco": "2026-12-03",
+  "https://livepocket.jp/e/kcvvr": "2026-12-25",
   "https://livepocket.jp/e/keep_on_23": "2027-01-12",
   "https://livepocket.jp/e/l7pgt": "2026-12-26",
   "https://livepocket.jp/e/lcyay": "2026-12-03",
@@ -376,6 +379,7 @@
   "https://livepocket.jp/e/milestone_ver12": "2026-11-27",
   "https://livepocket.jp/e/milestone_ver13": "2026-12-24",
   "https://livepocket.jp/e/mini1121": "2026-11-21",
+  "https://livepocket.jp/e/mini1128": "2026-11-28",
   "https://livepocket.jp/e/miyamoto-shiomi": "2026-12-12",
   "https://livepocket.jp/e/nagoya202611_": "2026-11-23",
   "https://livepocket.jp/e/namake00": "2026-12-24",
@@ -387,6 +391,7 @@
   "https://livepocket.jp/e/ns_1215w": "2026-12-15",
   "https://livepocket.jp/e/odb9y": "2026-12-11",
   "https://livepocket.jp/e/ogrhp": "2026-11-30",
+  "https://livepocket.jp/e/osaka20261128": "2026-11-28",
   "https://livepocket.jp/e/osinoma": "2026-12-31",
   "https://livepocket.jp/e/out_loud_3": "2027-01-19",
   "https://livepocket.jp/e/oxnpk": "2026-12-23",
@@ -406,6 +411,7 @@
   "https://livepocket.jp/e/reversi_osaka": "2026-12-06",
   "https://livepocket.jp/e/rf0ct": "2026-12-26",
   "https://livepocket.jp/e/ring1205": "2026-12-05",
+  "https://livepocket.jp/e/ring1206": "2026-12-06",
   "https://livepocket.jp/e/ring_1205": "2026-12-05",
   "https://livepocket.jp/e/ririna_hapiba2026": "2026-12-05",
   "https://livepocket.jp/e/rose20270313": "2027-03-13",
